@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        img {
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Thay đổi thuộc tính HTML</h2>
+        <div>
+            <img id="hinhanh"
+                src="https://cdn.discordapp.com/attachments/885498631619239958/995253816142348368/unknown.png" />
+        </div>
+        <form action="">
+            <input type="button" id="btn1" value="Đổi Hình" />
+            <input type="button" id="btn2" value="Trở về hình cũ" />
+        </form>
+    </div>
+
+
+    <script>
+
+        var hinh1 = 'https://cdn.discordapp.com/attachments/885498631619239958/995254227570020382/unknown.png';
+        var hinh2 = 'https://cdn.discordapp.com/attachments/885498631619239958/995253816142348368/unknown.png';
+
+        document.getElementById("btn1").onclick = function () {
+            document.getElementById("hinhanh").src = hinh1;
+        };
+
+
+        document.getElementById("btn2").onclick = function () {
+            document.getElementById("hinhanh").src = hinh2;
+        };
+
+    </script>
+
+</body>
+
+</html>

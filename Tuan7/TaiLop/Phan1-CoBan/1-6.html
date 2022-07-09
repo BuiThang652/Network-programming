@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1
+        function nextNumber(a) {
+            return a + 1;
+        };
+        document.write("Bài 1: a=1 => trả về =>", nextNumber(1));
+        document.write("<br>");
+        // Bài 2
+        function chuviHCN(a, b) {
+            return 2 * (a + b);
+        };
+        document.write("Bài 2: Chu vi hình chữ nhật:", chuviHCN(3, 4));
+        document.write("<br>");
+        // Bài 3
+        var a = prompt("Nhập số a: ");
+        if (a % 2 == 0) {
+            document.write(a, " Là số chẵn")
+        }
+        else {
+            document.write(a, " là số lẻ")
+        }
+        document.write("<br>");
+
+        // Bài 4
+        var tich = 1;
+        for (var i = 1; i <= a; i++) {
+            tich = tich * i;
+        }
+        document.write("Bài 4: Tích từ 1 -> ", a, "", tich);
+        document.write("<br> <hr> <br>");
+
+        // Bài 5
+        var x = prompt("Nhập điểm môn 1: ");
+        var y = prompt("Nhập điểm môn 2: ");
+        var z = prompt("Nhập điểm môn 3: ");
+
+        let DTB = (x + y + z) / 3;
+        // Xét khóa luận
+
+        document.write("Khóa luận <br>")
+        if (DTB >= 5) {
+            document.write("Được làm khóa luận <br>");
+        }
+        else {
+            document.write("Không được làm khóa luận <br>");
+        };
+
+        // Xét học lực
+        document.write("Học lực");
+
+        if (DTB >= 8) {
+            document.write("Học lực giỏi");
+        }
+        else if (DTB < 8 && DTB >= 6.5) {
+            document.write("Học lực khá");
+        }
+        else if (DTB < 6.5 && DTB >= 5) {
+            document.write("Học lực trung bình");
+        }
+        else {
+            document.write("Học lực yếu");
+        }
+
+        document.write("<br>");
+
+        // Bài 6
+        document.write("Bài 6 : <br>");
+        for (let i = 1; i <= 100; i++) {
+            document.write(i, "<br>");
+        }
+
+    </script>
+</body>
+
+</html>
