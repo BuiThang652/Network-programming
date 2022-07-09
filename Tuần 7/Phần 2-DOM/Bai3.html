@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        div {
+            width: 600px;
+        }
+
+        p {
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .macdinh {
+            background: #dddddd;
+            color: #ffffff;
+        }
+
+        .bg {
+            background: red;
+        }
+
+        .cl {
+            color: rgb(76, 0, 255);
+        }
+
+        button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Thay đổi CSS cho thẻ HTML</h2>
+    <div class="macdinh">
+        <p>CHÁO MỪNG BẠN ĐẾN VỚI MÔN NỀN TẢNG CÔNG NGHỆ WEB</p>
+    </div>
+
+    <button onclick="doibg()">Đổi background màu đỏ</button>
+    <button onclick="doicl()">Đổi Màu chữ thành màu xanh</button>
+
+    <script>
+        var divElement = document.querySelector('div');
+
+        // ĐỔi màu background 
+        function doibg() {
+            var hasClassBg = divElement.classList.contains("bg");
+            if (hasClassBg) {
+                divElement.classList.remove('bg');
+            } else {
+                divElement.classList.add('bg');
+            }
+
+        }
+
+        // Đổi màu color
+        function doicl() {
+            var hasClassCl = divElement.classList.contains("cl");
+            if (hasClassCl) {
+                divElement.classList.remove('cl');
+            }
+            else {
+                divElement.classList.add('cl');
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

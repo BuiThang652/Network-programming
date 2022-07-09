@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text CSS</title>
+    <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+        #css-code {
+            font-size: 30px;
+        }
+        #results {
+            margin-top: 20px;
+            background: #0099ff;
+            padding: 20px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px #888888;
+        }
+
+    </style>
+</head>
+<body>
+        
+    <div id="css-code">
+        Thuộc tính <b>white-space:</b>
+        <select>
+            <option>Chọn giá trị whitespace</option>
+            <option>normal</option>
+            <option>nowrap</option>
+            <option>pre</option>
+            <option>pre-wrap</option>
+            <option>pre-line</option>
+            <option>break-spaces</option>
+        </select>
+    </div>
+    <div id="results">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error laboriosam minus est temporibus cupiditate adipisci at, fuga ab ut cumque tempore magni nihil debitis quis sequi minima exercitationem quidem?
+        Asperiores, vero repellat, sed possimus quam quasi natus sequi alias rem iste architecto voluptatem fugit dignissimos nemo veniam tempore, iusto ullam aspernatur ipsam voluptate? Explicabo quod aliquam eum voluptatem animi.
+        Magni consectetur ea praesentium excepturi eveniet id laborum? Explicabo, debitis! Ab harum libero, numquam, debitis nesciunt eius eligendi obcaecati, consequuntur eveniet architecto incidunt quasi! Exercitationem vitae rerum eligendi consectetur voluptates.
+        Neque quaerat magni fuga doloribus nisi aliquid quo earum modi ipsa molestiae aliquam blanditiis esse sapiente nam obcaecati accusantium laborum placeat porro, illum minima odio. Assumenda quis vel adipisci dolore?
+        Doloremque ad eaque beatae autem laudantium architecto! Mollitia iusto iure magni quo impedit, vel tenetur error, nihil in harum soluta alias excepturi, qui fugiat commodi quos asperiores unde illum autem?
+        Harum explicabo libero deleniti odio, ea dolore iusto voluptas incidunt eum, dolorem, minima perspiciatis consequuntur! Quam mollitia exercitationem saepe aliquid atque ad corrupti modi, sapiente asperiores blanditiis consequuntur voluptatibus id.
+        Ad totam iste nemo veniam officiis repudiandae, dolorem minima sapiente facere excepturi quo autem, commodi rerum tenetur id? Quas odit iste repellendus atque illo aliquid ducimus tenetur pariatur facere unde!
+        Inventore aperiam, porro error quod exercitationem molestiae voluptas commodi illo nesciunt modi vero nostrum ipsam! Nihil dolorem earum aliquam. Quos nihil consectetur officiis, velit tempore provident debitis autem dignissimos sequi?
+        Laudantium quod recusandae quis sapiente corrupti, fuga vel libero? Excepturi odit cum amet necessitatibus voluptatum culpa voluptate, at mollitia fugiat laborum, quidem provident non cupiditate aliquam autem explicabo, doloremque eos!
+        Perferendis quidem dicta blanditiis, minima ullam commodi laboriosam laborum incidunt, perspiciatis ducimus cum facilis, nesciunt iusto culpa voluptatibus? Est sed non veritatis, iusto eaque quaerat corporis officiis molestiae possimus aut.</p>
+    </div>
+
+    <script>
+        var select  = document.querySelector("#css-code");
+        var results = document.querySelector("#results");
+        select.addEventListener("change", function(e) {
+        results.setAttribute("style", "white-space: "+e.target.value);
+        })
+    </script>
+
+
+</body>
+</html>
+
+
+

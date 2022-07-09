@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài làm</title>
+    <style>
+        fieldset {
+            width: 600px;
+        }
+        
+        #container {
+            background-color: #7356d1;
+            color: #ffffff;
+            font-family: courier;
+            padding: 1px;
+            margin-top: 10px;
+        }
+        
+        .container-title {
+            margin: 2px;
+            margin-top: 2px;
+            background-color: #febecb;
+            text-transform: uppercase;
+            padding: 2px;
+            color: #7356d1;
+            padding-left: 100px;
+        }
+        
+        .container-head {
+            padding: 10px;
+        }
+        
+        .container-head .user {
+            margin-bottom: 30px;
+        }
+        
+        .container-head .user input {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        
+        .container-head .date .year {
+            margin-left: 88px;
+            margin-right: 33px;
+        }
+        
+        .box input {
+            margin-left: 180px;
+        }
+        
+        form .sub {
+            margin: 30px;
+            margin-left: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <fieldset>
+        <legend align="center"><b>FORM:</b></legend>
+        <div id="container">
+            <div class="container-title">phiếu thăm dò ý kiến</div>
+            <div class="container-head">
+                <div class="user">
+                    <form action="">
+                        <label for="">Tên đăng nhập: </label>
+                        <input type="text" name="" id="">
+                        <label for="">Giới tính: </label>
+                    </form>
+                </div>
+                <div class="date">
+                    <form action="">
+                        <label for="">Năm sinh: </label>
+                        <input type="number" name="" id="" class="year">
+                        <input type="radio" name="Nam" id="">
+                        <label for="">Nam</label>
+                        <input type="radio" name="Nữ" id="">
+                        <label for="">Nữ</label>
+                    </form>
+                </div>
+                <div>
+                    <p>Những mục bạn thường xuyên quan tâm trên Internet</p>
+                    <br>
+                    <form action="" class="box">
+                        <input type="checkbox" name="Tin tức" id="">
+                        <label for="">Tin tức</label><br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Giải trí</label> <br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Góc học tập</label> <br>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Các mục khác</label> <br>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <form action="">
+                    <input type="submit" value="Gửi đi" class="sub">
+                    <input type="submit" value="Phục hồi lại">
+                </form>
+            </div>
+        </div>
+    </fieldset>
+
+</body>
+
+</html>

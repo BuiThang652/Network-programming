@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <style>
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cach {
+        text-align: left;
+        font-size: 20px;
+        background: #d7d7d7;
+        margin:15px 0;
+    }
+
+    .phandau {
+        border: 1px solid #0000ff;
+        margin-bottom: 15px;
+    }
+
+    .phanchinh {
+        border: 1px solid #0000ff;
+        margin-bottom: 15px;
+        background: #b35a5a;
+        padding: 15px;
+    }
+
+    .dau {
+        background: #ffffff;
+    }
+
+    .chinh {
+        background: #ffffff;
+    }
+
+    .noidung {
+        background: #6da3c5;
+        border: 1px solid #0000ff;
+        height: 670px;
+    }
+
+    .chan {
+        background: #ffffff;
+        clear: both;
+    }
+
+    .phanchan {
+        border: 1px solid #0000ff;
+
+    }
+
+    ul {
+        width: 180px;
+    }
+
+    li {
+        background-color: #d88841;
+        list-style-type: none;
+        width: 180px;
+        margin-bottom: 5px;
+        height: 60px;
+        line-height: 65px;
+    }
+
+    .ul1 {
+        float: left;
+    }
+
+    .ul2 {
+        float: right;
+        margin-right: 45px;
+    }
+
+    .hong{
+        background: #ffc0cb;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Cách 1 -->
+    <div id="bai1">
+        <div class="cach">
+            <b>Cách 1</b>
+        </div>
+        <div class="phandau">
+            <p>Phần đầu trang</p>
+        </div>
+    
+        <div>
+            <div class="phanchinh" style="border: 1px solid #0000ff;">
+                <p>Phần chính trang</p>
+                <div class="dau phandau">
+                    <p>Phần đầu trang</p>
+                </div>
+        
+                <div>
+                    <div class="chinh phanchinh">
+                        <div class="noidung">
+                            <p>Phần chính của trang</p>
+                                <ul class="ul1">
+                                    <li >Item 1</li>
+                                    <li class="hong">Item 2</li>
+                                    <li>Item 3</li>
+                                    <li class="hong">Item 4</li>
+                                    <li>Item 5</li>
+                                    <li class="hong">Item 6</li>
+                                    <li>Item 7</li>
+                                    <li class="hong">Item 8</li>
+                                </ul>
+        
+                                <ul class="ul2">
+                                    <li>Item 1</li>
+                                    <li class="hong">Item 2</li>
+                                    <li>Item 3</li>
+                                    <li class="hong">Item 4</li>
+                                    <li>Item 5</li>
+                                    <li class="hong">Item 6</li>
+                                    <li>Item 7</li>
+                                    <li class="hong">Item 8</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="chan phanchan">
+                    <p>Phần chân trang</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="phanchan">
+            <p>Phần chân trang</p>
+        </div>
+    </div>
+
+    <!-- Cách 2 -->
+    <div id="bai2">
+        <div class="cach">
+            <b>Cách 2</b>
+        </div>
+        <div class="phandau">
+            <p>Phần đầu trang</p>
+        </div>
+    
+        <div>
+            <div class="phanchinh" style="border: 1px solid #0000ff;">
+                <p>Phần chính trang</p>
+                <div class="dau phandau">
+                    <p>Phần đầu trang</p>
+                </div>
+        
+                <div>
+                    <div class="chinh phanchinh">
+                        <div class="noidung">
+                            <p>Phần chính của trang</p>
+                                <ul class="ul1">
+                                    <li >Item 1</li>
+                                    <li class="hong">Item 2</li>
+                                    <li>Item 3</li>
+                                    <li class="hong">Item 4</li>
+                                    <li>Item 5</li>
+                                    <li class="hong">Item 6</li>
+                                    <li>Item 7</li>
+                                    <li class="hong">Item 8</li>
+                                </ul>
+        
+                                <ul class="ul2">
+                                    <li>Item 1</li>
+                                    <li class="hong">Item 2</li>
+                                    <li>Item 3</li>
+                                    <li class="hong">Item 4</li>
+                                    <li>Item 5</li>
+                                    <li class="hong">Item 6</li>
+                                    <li>Item 7</li>
+                                    <li class="hong">Item 8</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="chan phanchan">
+                    <p>Phần chân trang</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="phanchan">
+            <p>Phần chân trang</p>
+        </div>
+    </div>
+</body>
+</html>

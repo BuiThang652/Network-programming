@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Hàm không có tham số truyền vào
+        function show() {
+            console.log('Đây là hàm show');
+        };
+
+        show();
+
+        // Hàm có tham số truyền vào 
+        function sum(a, b) {
+            var tong = a + b;
+            console.log("Tổng của a và b là: "+ tong);
+
+        }
+
+        sum(3,6)
+
+        // Hàm có giá trị trả về 
+        function sum1 (a,b,c) {
+            var cong = a +b +c;
+            return cong;
+
+        }
+
+        var number1 = sum1(3,4,5);
+        var number2 = 6;
+        console.log(number1 - number2)
+
+
+        // Hàm có sẵn
+
+        document.write("Chào mừng bạn đến với trang web");
+
+        // prompt("Nhập tên: ");
+
+        confirm('Bạn là sinh viên?');
+
+    </script>
+</body>
+
+</html>
